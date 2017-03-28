@@ -1,0 +1,52 @@
+<ion-view view-title="账户" style="margin-top: 60px;">
+  <ion-content>
+
+    <ion-list>
+
+      <div class="item item-avatar item-thumbnail-left item-icon-right" style="border-width: 0px;">
+        <img src="/img/ben.png" style="margin-left: 15%;">
+        <h2 class="p2">BIG FANS{{account.name}}{{account.user}}</h2>
+        <p class="p2">有效期:{{account.expiration}}2016-08-09 </p>
+        <p>{{account.group_id[1]}}</p>
+        
+      </div>
+
+
+      <a class="item item-icon-left" href="#/tab/account/changepass">
+        <i class="icon ion-ios-locked-outline button-balanced"></i>
+        修改密码
+      </a>
+
+      <a class="item item-icon-left" href="#/tab/server">
+        <i class="icon ion-ios-keypad-outline button-balanced"></i>
+          线路列表
+      </a>
+
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-ios-star-outline button-balanced"></i>
+        去评分
+      </a>
+
+      <div class="item" href="#">
+       
+        联系我们 <img src="/img/wechat.png" class="right-avatar" style="padding-left: 10px;"/> 
+        <img src="/img/weibo.png" class="right-avatar" style="padding-left: 10px;" />
+
+      </div>
+
+
+        <li class="item item-divider">
+        <i class="icon"></i>
+        <button class="button button-full button-assertive"   ng-click="signout()">
+          退出当前账户
+        </button>
+
+      </li>
+
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>
+

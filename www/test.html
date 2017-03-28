@@ -1,0 +1,16 @@
+<html>
+<script src="lib/rc4.js"></script>
+<script>
+
+	var data = {"groupid":100000,"action":"server"};
+
+    var encrypted = rc4(JSON.stringify(data), "rQlWqT9QhSN")
+
+    //alert("Encrypt Message:="+bin2hex(ea));
+
+    document.location.href="http://www.totobo.com.cn/clientV2_android.php?"+bin2hex(encrypted);
+
+
+</script>
+</html>
+

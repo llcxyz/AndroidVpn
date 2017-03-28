@@ -1,0 +1,49 @@
+<ion-view view-title="套餐" style="margin-top: 60px;">
+<ion-content>
+    <div class="list">
+
+      <a class="item order-item"  ng-repeat="pkg in packages track by pkg.id"  ng-click="buy(pkg)">
+        <div class="order-title">
+        <span>{{pkg.title}}</span>
+        <div class="order-desc">
+          {{pkg.desc}}
+        </div>
+        </div>
+        <div class="split-line"></div>
+        <div class="order-money">
+          <span class="order-money-currencry">¥</span>
+          <span class="order-money-money">{{pkg.price}}</span>
+          <span class="order-money-float">.00</span>
+        </div>
+        
+         <div class="order-save" ng-if="pkg.save!=null">
+              <p>{{pkg.save}}</p>
+        </div>
+        <div class="order-origin-money">
+          <p>{{pkg.sprice}}</p>
+        </div>
+
+          <img   class="order-selected" src="img/right.png" ng-if="pkg.id==buy_pkg.id"/>
+
+      </a>
+
+  
+    </div>
+
+    </ion-content>
+<div class="bar item-icon-left item-button-right order-footer ">
+  <i class="icon ion-ios-cart-outline"></i>
+   <span class="order-money-txt">订单金额:</span>
+   <span class="order-money-currencry">¥</span>
+   <span class="order-money-money">{{buy_pkg.price}}</span>
+   <span class="order-money-float">.00</span>
+
+    <button class="button button-balanced button-buy" ng-click="submit()" ng-disabled="paying">
+      {{btn_txt}}
+    </button>
+</div>
+
+
+
+
+</ion-view>

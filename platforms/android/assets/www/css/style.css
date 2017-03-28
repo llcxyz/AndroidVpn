@@ -1,0 +1,415 @@
+
+{
+
+font-family: 微软雅黑；
+
+}
+
+{
+font-family: "Microsoft YaHei" ! important;
+}
+
+.tabbed-slidebox .slider-slide{
+    background-color: white!important;
+}
+.slider-slide h3{
+            color:#fff;
+            margin-top:10px;
+        }
+
+.scroll{
+            height:100%;
+        }
+        
+.tabbed-slidebox .tsb-icons:after{
+    display:none;
+}
+
+
+.spinner svg {
+  width: 25% !important;
+  height: 85px !important;
+}
+.btn {
+  border-radius:5px;
+}
+
+.progress-wrapper{
+    position: relative;
+    margin:20px auto;
+    margin-top: 10%;
+}
+
+.progress{
+    position: absolute;
+    color: #fffff;
+    font-weight: 100;
+    line-height: 1;
+}
+.round-progress-wrapper{
+    left:20%;
+    position: absolute;
+
+}
+.p2 {
+    margin-left: 30%!important;
+    padding-top: 5px;
+}
+
+.top-header {
+	background-color: #005cb4;
+	border-radius: 0px 0px 28px 28px;
+    height:38px;
+}
+.top-logo {
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 30px;
+    height: 40px;
+    width:35%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #003d95;
+    border-radius: 20px 20px 20px 20px;
+    margin:0 auto;
+    padding-top: 10px;
+    margin-top: 12px;
+    color: #ffffff;
+}
+.top-logo-title1 {
+    font-size: 100%;
+
+}
+
+.top-logo-title2 {
+    padding-left: 4px;
+    color:yellow;
+    font-size: 100%;
+    margin:  0px 0px 0px 0px;
+}
+.tabs {
+    background-color: #EDEDED;
+}
+  ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+    color: #1fc724; }
+
+
+.right-avatar {
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 80%;
+    border-radius: 40%;
+
+}
+/*.button.button-assertive {
+    border-color: transparent;
+    background-color: #fed82b;
+}*/
+
+.bg {
+    background-image: url('../img/login_bg.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+/*    border-width: 0px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;*/
+}
+.login-img{
+    width: 100%;
+    z-index: -200;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.login-panel {
+    /*padding-top: 70%;*/
+    margin-top: 70%;
+
+}
+.footer {
+    font-size:2em;
+    /*border-width: 1px;*/
+}
+.login-input {
+    border-color: #b2b2b2!important;
+    background-color: #f8f8f8!important;
+    color: #444!important;
+    border-radius: 5px 5px 5px 5px;
+    font-size:1.5em;
+    text-align: center;
+}
+.login-input-i {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    margin-right: 3px;
+}
+
+.login-input-input {
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 3px;
+    margin-right: 3px;
+}
+
+
+.check-box {
+    display: inline-block;
+    padding: 7px 7px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    left: 8px;
+    z-index: 3;
+    margin-top: -21px;
+
+
+}
+.order-footer{
+    bottom: 55px;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    background-position: top;
+    height: 44px;
+    margin-bottom: 49px;
+}
+.order-money-txt {
+    line-height:34px;   
+    overflow:hidden;
+    text-align:center; 
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.order-money-money {
+    font-size: 24px;
+    padding-left: 3px;
+    line-height: 34px;
+    overflow:hidden;
+    font-weight: bold;
+    color: #005cb4;
+}
+.order-money-currencry {
+    font-size:18px;
+    line-height:40px;   
+    overflow:hidden;
+    text-align:center; 
+    font-weight: bold;
+    color: #005cb4;
+}
+
+.order-money-float {
+    font-size:18px;
+    line-height:40px;   
+    overflow:hidden;
+    text-align:center; 
+    font-weight: bold;
+    color: #005cb4;
+}
+.button-buy{
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-radius: 0;
+    top:0!important;
+    bottom: 0;
+    right:0!important;
+    background-color: #23c228!important;
+}
+
+.order-title {
+    float:left;
+    height: 100%;
+    line-height:24px;   
+    overflow:hidden;
+    text-align:center; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.order-desc{
+
+    line-height:34px;   
+    overflow:hidden;
+    text-align:center; 
+    font-weight: bold;
+    font-size: 16px;
+   
+
+}
+.split-line {
+    display: inline-block;
+    border-right:2px dashed #ccc; 
+    height:50px; 
+    width:1px;
+    float: left;
+    margin-left:20px;
+}
+.order-money{
+    font-size:24px;
+    margin-left: 20px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+.order-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px; 
+    margin-top: 20px;
+    height:70px;
+    border-color: #23c226;
+}
+.order-selected {
+   position: absolute;
+    right: 0;
+    bottom: 0;
+    height:25px;
+}
+.order-save{
+    position: absolute;
+    right: 0;
+    top:12px;
+    height:25px;
+    width: 30%;
+    background-color: #fed82b;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.order-origin-money{
+    position: absolute;
+    right: 5px;
+    top:33px;
+    height:25px;
+    width: 30%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+
+}
+
+.item-load {
+    position: absolute;
+    right: 15px;
+    top:30%;
+    color:#727273;
+}
+
+.linkbg {
+    background-image: url('../img/link_bg.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.pane, .view{
+    background-color: #f7f7f7;
+}
+
+.link_button{
+    position: absolute;
+   
+    left: 33%;
+    top: 25%;
+
+}
+.link-server-list {
+    position: absolute;
+    left: 15%;
+    z-index: 10;
+    top: 48%;
+    width: 20%;
+
+}
+.link-server-connect {
+    position: absolute;
+    left: 65%;
+    z-index: 10;
+    top: 48%;
+    width: 20%;
+    
+}
+.link-connect-txt {
+    font-size:30px;
+    z-index: 20px;
+    position: absolute;
+    left: 35%;
+    z-index: 10;
+    top: 33%;
+    color:#ffffff;
+    font-weight: bold;
+}
+.link-tab-bg{
+
+    
+    width: 100%;
+    z-index: 5;"
+}
+.link-server-name{
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    color:#daa86d;
+    font-size:16px;
+}
+
+.link-status {
+    position: absolute;
+    left:60%;
+    top:55%;
+    color: #858585;
+}
+
+.link-expire-time {
+    position: absolute;
+    
+    top:65%;
+    text-align: center;
+    font-weight: bold;
+    color: #858585;
+    width: 100%;
+}
+
+.menu-arrow-right {
+    position: absolute;
+    right:5px;
+    top:15px;
+    font-size:20px;
+    font-weight: bold;
+    z-index: 1000;
+}
+.expired {
+    color: red!important;
+    font-weight: bold;
+
+}
+.top {
+    position: absolute;
+    top:0px;
+    left:2px;
+    float: left;
+    margin-top: 10px!important;
+
+}
+.down {
+    margin-top: 70%;
+}
+
+
+
+

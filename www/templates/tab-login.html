@@ -1,0 +1,24 @@
+<ion-view view-title="登录">
+  <ion-content class="padding" >
+    <div class="list">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-android-person placeholder-icon" style="font-size:1.5em;"></i>
+          <input type="text" placeholder="用户名" ng-model="username" value="testvpn00">
+        </label>
+
+        <label class="item item-input">
+           <i class="icon ion-android-lock placeholder-icon" style="font-size:1.5em;"></i>
+          <input type="password" placeholder="密 码" ng-model="password" value="vpn123">
+        </label>
+
+      </div>
+
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click='login()' ng-disabled="login_state=='ing'">{{login_txt}}</button>
+    </div>
+
+  </ion-content>
+
+</ion-view>

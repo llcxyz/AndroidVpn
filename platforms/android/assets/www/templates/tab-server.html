@@ -1,0 +1,83 @@
+<ion-view view-title="服务器列表" >
+  <ion-content class="scroll-content ionic-scroll scroll-content-false  has-header">
+    <!-- div class="list" >
+
+    <a class="item item-icon-left item-icon-right" ng-class="{'item-divider': server.isgroup==true}" ng-repeat="server in serverGroups track by server.name"
+     ng-click="server.isgroup?void(0):toVpn({{server}})">
+      
+      <i ng-if="server.isgroup!=true" class="icon ion-ios-circle-filled" style="color:#da3922;"></i>
+        <h2>{{server.name}}</h2>
+        <p ng-if="server.isgroup!=true">支持协议:
+          <span ng-if="server.communicationprotocol==1">PPTP|L2TP|IKEV2</span>
+          <span ng-if="server.communicationprotocol==2">PPTP</span>
+          <span ng-if="server.communicationprotocol==3">L2TP</span>
+        </p>
+      <span  ng-if="server.isgroup!=true" class="item-load">
+      {{server.load}} %
+      </span>
+     
+    </a>
+
+
+    </div-->
+
+    <div class="menu-arrow-right"> <i class="ion-ios-arrow-right"></i></div>
+
+
+     <tab-slide-box class="tabbed-slidebox">
+          <div class="tsb-icons">
+              <div class="tsb-ic-wrp">
+                <ion-scroll direction="x" class="tsb-hscroll">
+               
+               
+                  <a href="javascript:;" class="icon-off tab"  ng-repeat="group in grouplist" on-finish-render="test()">{{group.name}}</a>
+                  
+               </ion-scroll>
+              </div>
+          </div>
+
+                    <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+
+                      
+                        <ion-slide ng-repeat="svlist in serverlist">
+                            <a class="item item-icon-left item-icon-right" ng-class="{'item-divider': server.isgroup==true}" ng-repeat="server in svlist track by server.hostip"
+     ng-click="server.isgroup?void(0):toVpn({{server}})">
+      
+      <i ng-if="server.isgroup!=true" class="icon ion-ios-circle-filled" style="color:#da3922;"></i>
+        <h2>{{server.name}}</h2>
+        <p ng-if="server.isgroup!=true">支持协议:
+          <span ng-if="server.communicationprotocol==1">PPTP|L2TP|IKEV2</span>
+          <span ng-if="server.communicationprotocol==2">PPTP</span>
+          <span ng-if="server.communicationprotocol==3">L2TP</span>
+        </p>
+      <span  ng-if="server.isgroup!=true" class="item-load">
+      {{server.load}} %
+      </span>
+     
+    </a>
+
+                        </ion-slide>
+
+                        <ion-slide>
+                            <h1>Games content</h1>
+                        </ion-slide>
+                        <ion-slide>
+                            <h1>Mail content</h1>
+                        </ion-slide>
+                        <ion-slide>
+                            <h1>Car content</h1>
+                        </ion-slide>
+                        <ion-slide>
+                            <h1>Profile content</h1>
+                        </ion-slide>
+
+
+                        
+
+                      
+                    </ion-slide-box>
+            </tab-slide-box>
+
+  </ion-content>
+
+</ion-view>

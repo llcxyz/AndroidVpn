@@ -1,0 +1,41 @@
+<div class="bar bar-header top-header">
+    <h1 class="title"></h1>
+     <div class="top-logo">
+    
+      <span class="top-logo-title1">FANS</span><span class="top-logo-title2">加速器</span>
+    
+      </div>
+  </div>
+
+
+<ion-view view-title="套餐" style="margin-top: 60px;">
+  <ion-content class="padding" >
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email/手机号</span>
+        <input type="text" placeholder="邮件地址/手机号码" ng-model='login'>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">密码</span>
+        <input type="password" placeholder="密码8-12位" ng-model='password'>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">确认密码</span>
+        <input type="password" placeholder="确认密码" ng-model='password2'>
+      </label>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="register()" ng-disabled="reg_state=='ing'">{{reg_txt}}</button>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-assertive" ng-click="back()" ng-disabled="reg_state=='ing'">返回</button>
+    </div>
+
+
+  </ion-content>
+  
+  </ion-view>
+
+
+

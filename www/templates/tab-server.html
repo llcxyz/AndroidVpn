@@ -1,0 +1,24 @@
+<ion-view view-title="服务器列表" style="margin-top: 60px;">
+  <ion-content>
+    <div class="list" >
+
+    <a class="item item-avatar item-icon-left item-icon-right" ng-class="{'item-divider': server.isgroup==true}" ng-repeat="server in serverGroups"
+     ng-click="server.isgroup?void(0):toVpn({{server}})">
+      
+      <i ng-if="server.isgroup!=true" class="icon ion-ios-monitor-outline" ></i>
+        <h2>{{server.name}}</h2>
+        <p ng-if="server.isgroup!=true">支持协议:
+          <span ng-if="server.communicationprotocol==1">PPTP|L2TP|IKEV2</span>
+          <span ng-if="server.communicationprotocol==2">PPTP</span>
+          <span ng-if="server.communicationprotocol==3">L2TP</span>
+        </p>
+      <span  ng-if="server.isgroup!=true" class="item-note">
+        负载:{{server.load}} %
+      </span>
+      <i ng-if="server.isgroup!=true" class="icon ion-chevron-right icon-accessory"></i>
+    </a>
+
+    </div>
+
+  </ion-content>
+</ion-view>

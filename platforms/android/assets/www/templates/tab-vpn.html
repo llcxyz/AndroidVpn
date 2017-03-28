@@ -1,0 +1,97 @@
+<ion-view view-title="连接">
+
+  <div  style="text-align: center;">
+<!--   <img src="img/link_bg.png" class="link-tab-bg" />
+  <img src="img/serverlist.png" class="link-server-list" />
+  <img src="img/connect.png" class="link-server-connect" /> -->
+
+  <svg  xmlns="http://www.w3.org/2000/svg" role="progressbar" aria-valuemin="0" viewBox="0 0 200 300" aria-valuemax="150" aria-valuenow="0"
+
+   style="margin-left: auto; margin-right: auto; width: 300px; height: 400px; overflow: hidden;">
+
+        <circle fill="none" cx="100" cy="100" r="80" stroke="rgb(234, 234, 234)" stroke-width="10"></circle>
+
+            <circle fill="#f9cc29" cx="100" cy="100" r="50" class="inner-circle" ng-click="do_Action()"></circle>
+
+            <text x="100" y="110" font-family="Verdana"  fill="white" text-anchor="middle" 
+            style="font-size: 20px;font-weight: bold;" ng-click="do_Action()">
+                  {{btn_label}}
+            </text>
+
+            <circle fill="none" cx="38" cy="195" r="30" stroke="rgb(234, 234, 234)" stroke-width="10">
+            
+            </circle>
+            
+            <circle fill="none" cx="153" cy="200" r="30" stroke="rgb(234, 234, 234)" stroke-width="10"></circle>
+
+            <image x="13" y="170" height="50px" width="50px"   xlink:href="img/serverlist.png" ng-click="goState('tab.server')"/>
+            <image x="128" y="175" height="50px" width="50px"   xlink:href="img/connect.png" ng-click="refresh()"/>
+  </svg>
+
+
+  <div class="link-server-name">
+      <p>{{serverInfo.name}}</p>
+  </div>
+  
+  <div class="link-status">
+    <p ng-class="{'expired': expired}">{{status_txt}}</p>
+  </div>
+
+  <div class="link-expire-time">
+    <p>有效期至:{{account.expiration}}</p>
+  </div>
+
+
+
+
+
+
+
+
+          <!--   <div class="progress-wrapper" >
+             <div class="progress" ng-style="getStyle()">
+             {{btn_label}} </div>
+
+              <round-progress
+                    max="150"
+                    current="current"
+                    color="{{color}}"
+                    bgcolor="#eaeaea"
+                    radius="{{radius}}"
+                    stroke="15"
+                    semi="false"
+                    rounded="true"
+                    clockwise="true"
+                    responsive="false"
+                    duration="800"
+                    offset='inherit'
+                    animation="easeInOutQuart"
+                    animation-delay="0"  ng-click="do_Action()">
+                      
+
+
+                    </round-progress>
+
+
+            <div class="link_button">
+             <svg class="round-progress" xmlns="http://www.w3.org/2000/svg" role="progressbar" aria-valuemin="0" viewBox="0 0 100 100" aria-valuemax="150" aria-valuenow="0" style="top: 0px; left: 0px; position: static; width: 100px; height: 100px; overflow: hidden;">
+            <circle fill="#f9cc29" cx="50" cy="50" r="50" ></circle>
+            
+              <g ng-transclude=""></g>
+              </svg>
+
+          </div>
+
+            </div>
+          
+         
+
+          
+
+         -->
+
+
+
+  </div>
+
+</ion-view>

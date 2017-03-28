@@ -1,0 +1,24 @@
+<ion-view view-title="注册">
+  <ion-content class="padding" >
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email/手机号</span>
+        <input type="text" placeholder="邮件地址/手机号码" ng-model='login'>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">密码</span>
+        <input type="password" placeholder="密码8-12位" ng-model='password'>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">确认密码</span>
+        <input type="password" placeholder="确认密码" ng-model='password2'>
+      </label>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="register()" ng-disabled="reg_state=='ing'">{{reg_txt}}</button>
+    </div>
+
+  </ion-content>
+
+</ion-view>

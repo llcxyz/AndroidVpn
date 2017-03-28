@@ -1,0 +1,46 @@
+<ion-view view-title="账户信息">
+
+  <ion-content class="padding">
+    <ul class="list">
+      <li class="item">
+        <i class="icon "></i>
+        昵称<span class="item-note">{{account.name}}</span>
+      </li>
+
+      <li class="item">
+        <i class="icon "></i>
+        账号<span class="item-note">{{account.user}}</span>
+      </li>
+
+      <li class="item">
+        <i class="icon "></i>
+        有效期<span class="item-note">{{account.expiration}}</span>
+      </li>
+
+      <li class="item">
+        <i class="icon "></i>
+        用户组<span class="item-note">{{account.groupname}}</span>
+      </li>
+
+      <li class="item">
+      <i class="icon "></i>
+      电话<span class="item-note"> </span>
+    </li>
+
+      <li class="item">
+        <i class="icon "></i>
+        电子邮件<span class="item-note"> </span>
+      </li>
+
+      <li class="item item-divider">
+        <i class="icon"></i>
+        <button class="button button-full button-assertive" ng-click="signout()">
+          退出登录
+        </button>
+
+      </li>
+    </ul>
+
+  </ion-content>
+
+</ion-view>

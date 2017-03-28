@@ -1,0 +1,62 @@
+
+.spinner svg {
+  width: 25% !important;
+  height: 85px !important;
+}
+.btn {
+  border-radius:5px;
+}
+.progress-wrapper{
+    position: relative;
+    margin:20px auto;
+
+}
+
+.progress{
+    position: absolute;
+    color: #fffff;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.bg {
+	background-image: url('/img/logo_bg.png');
+}
+.top-header {
+	background-color: #005cb4;
+	border-radius: 0px 0px 28px 28px;
+}
+.top-logo {
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 30px;
+    height: 43px;
+    width:30%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #003d95;
+    border-radius: 20px 20px 20px 20px;
+    margin:0 auto;
+    padding-top: 10px;
+    margin-top: 18px;
+    color: #ffffff;
+}
+.top-logo-title1 {
+    font-size: medium;
+
+}
+
+.top-logo-title2 {
+    padding-left: 4px;
+    color:yellow;
+    font-size: large;
+}
+.tabs {
+    background-color: #EDEDED;
+}
